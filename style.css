@@ -1,0 +1,132 @@
+/* Основные стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Arial для шрифта */
+    padding-top: 50px; /* Отступ сверху для навбара */
+    background-color: #A6B6A9; /* Установка светло-желтого фона для всего сайта */
+}
+
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #5D7279 ;
+}
+
+.navbar-brand, 
+.navbar-nav > li > a {
+    color: white !important; /* Make text white for visibility */
+}
+/* Jumbotron */
+.jumbotron {
+    background-color: #A6B6A9;
+}
+
+/* Стили для футера */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #A6B6A9;
+}
+
+/* Стили для заголовков секций */
+h2 {
+    margin-top: 50px;
+}
+
+
+
+/* Стили заголовка */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+}
+
+/* Стили для секций */
+.section {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #5D7279;
+    color: white;
+}
+
+/* Цвета фона для каждой секции */
+.section1 {
+    background-color: #5D7279 ;
+}
+
+.section2 {
+    background-color: #5D7279 ;
+}
+
+.section3 {
+    background-color: #5D7279 ;
+}
+
+/* Цвета для заголовков каждой секции */
+.section-title {
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    padding: 1px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.section1 .section-title {
+    background-color: #5D7279 ;
+    color: white;
+    
+}
+
+.section2 .section-title {
+    background-color: #5D7279 ;
+    color: white;
+}
+
+.section3 .section-title {
+    background-color: #5D7279 ;
+    color: white;
+}
+
+/* Адаптивный дизайн: Десктоп */
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 30%;
+    }
+}
+
+/* Адаптивный дизайн: Планшет */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 45%;
+        float: left;
+    }
+
+    .section2 {
+        clear: left;
+    }
+
+    .section3 {
+        width: 95%;
+        clear: left;
+    }
+}
+
+/* Адаптивный дизайн: Мобильные устройства */
+@media (max-width: 767px) {
+    .section {
+        width: 95%;
+        margin: 10px auto;
+        float: none;
+    }
+}
